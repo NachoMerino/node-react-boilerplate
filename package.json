@@ -1,15 +1,19 @@
 {
-  "name": "node-react-boilerplate",
+  "name": "inventory-app-ivy-oak",
   "version": "1.0.0",
   "scripts": {
-    "client": "cd client && yarn start",
+    "client": "cd client && npm run start",
     "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
-    "concurrently": "^3.5.0"
+    "concurrently": "^3.6.0",
+    "os": "^0.1.1"
   }
 }
